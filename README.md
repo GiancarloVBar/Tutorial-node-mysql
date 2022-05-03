@@ -75,3 +75,20 @@ para caso não conecte
 ### })
 
 18) acrescentar a models User.js no app.js
+
+19) adicionar a Models User no app.js e executaar o servidor
+
+20) verificar se foram criadas as tabelas - verificado - comentar User.sync()
+
+21) Vamos tentar cadastrar usando o Insomnia, rota post
+Para receber os dados corretamente, precisamos dizer ao app.js que vamos
+receber um objeto JSON
+### app.use(express.json())
+e na rota post
+### console.log(req.body)
+
+22) com os dados obtidos corretamente, podemos cadastrar no DB
+OBS: só posso usar o AWAIT se acrescentar o ASYNC na função de cadastro
+
+23) Verificar no workbench se foi cadastrado - cadastrado com sucesso
+
